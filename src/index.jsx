@@ -11,9 +11,8 @@ import App from './components/App';
 import {VotingContainer} from './components/Voting';
 import {ResultsContainer} from './components/Results';
 
+// Local dev socket url 
 // ${location.protocol}//${location.hostname}
-
-
 
 const socket = io(`http://arod-voting-server.herokuapp.com:80`);
 socket.on('state', state =>
